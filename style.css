@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+h1 {
+    font-family:"Walter Turncoat";
+    margin: 20px 0 0 20px;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: #91BAD6;
+}
+
+.navbar{
+    height:60px;
+    width:100%;
+    background-color: #1E3F66;
+    margin:0;
+    display: flex;
+    gap:25px;
+    font-size: 15px;
+}
+
+.navbar h2{
+    color: white;
+    margin-right: 10px;
+    font-family:"Walter Turncoat";
+}
+.content{
+    height:90%;
+    width:100%;
+    background-color: #91BAD6;
+
+}
+
+a:hover{
+    color:#91BAD6;
+}
+
+a{
+    color:transparent;
+}
+
+.container {
+    width:50%;
+}
