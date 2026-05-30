@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Walter+Turncoat&display=swap');
 
 h1 {
     font-family:"Walter Turncoat";
@@ -42,5 +42,27 @@ a{
 }
 
 .container {
-    width:50%;
+    width:45%;
+    position:relative;
+    margin:20px auto;
+    border:1px solid black;
+    padding:20px;
+}
+
+.container-wrapper{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    align-items: stretch;
+}
+
+h2{
+    padding-left:10px;
+    font-family:"Coming Soon";
+}
+
+p{
+    font-family: "Coming Soon";
+    padding-left:20px;
+    
 }
