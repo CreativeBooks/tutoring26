@@ -1,135 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Stack+Sans+Notch:wght@200..700&family=Walter+Turncoat&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #add6f0;
+}
+
 h1 {
-    font-family:"Walter Turncoat";
+    font-family: "Walter Turncoat";
     margin: 20px 0 0 20px;
     font-size: 35px;
 }
 
-body {
-    margin:0;
-    padding:0;
-    background-color: #add6f0;
-}
-
-.navbar{
-    height:60px;
-    width:100%;
-    background-color: #1E3F66;
-    margin:0;
-    display: flex;
-    gap:25px;
-    font-size: 15px;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar h2{
-    color: white;
-    margin-right: 10px;
-    font-family:"Stack Sans Notch";
-}
-.content{
-    height:90%;
-    width:100%;
-    background-color: #add6f0;
-    
-}
-
-a:hover{
-    color:#91BAD6;
-}
-
-a{
-    color:transparent;
-}
-
-.container {
-    width:45%;
-    position:relative;
-    margin:20px auto;
-    border:2px solid black;
-    padding:20px;
-    box-shadow: 4px 10px 5px 4px #1a1a1a9c;
-    background-color: rgba(255, 255, 255, 0.4); 
-}
-
-.container img{
-    width:55%;
-    height:55%;
-    object-fit: cover;
-}
-
-.container-wrapper{
-    display: flex;
-    justify-content: center;
-    gap:20px;
-    align-items: stretch;
-}
-
-h2{
-    padding-left:10px;
-    font-family:"Stack Sans Notch";
-}
-
-p{
+h2 {
+    padding-left: 10px;
     font-family: "Stack Sans Notch";
-    padding-left:20px;
-
 }
 
 h3 {
     font-family: "Stack Sans Notch";
-    font-size:15px;
-    margin:0;
+    font-size: 15px;
+    margin: 0;
 }
 
-.header-2 {
-    padding-left:10px;
-    font-family:"Stack Sans Notch";
-    font-size:30px;
+p, li {
+    font-family: "Stack Sans Notch";
+    padding-left: 20px;
 }
 
-@keyframes sweep {
-    from {
-        background-size:0% 100%;
-    }
-    to {
-        background-size: 100% 100%;
-    }
+.navbar {
+    min-height: 60px;
+    width: 100%;
+    background-color: #1E3F66;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
+.navbar h2 {
+    color: white;
+    margin: 0 10px;
+    font-family: "Stack Sans Notch";
+}
 
-.highlight{
-    background-image:linear-gradient(to top, #1E3F66 100%);
-    background-repeat:no-repeat;
-    background-size:0% 100%;
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Content Layout */
+.content {
+    width: 100%;
+    background-color: #add6f0;
+    padding-bottom: 40px;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch;
+    padding: 0 20px;
+}
+
+.container {
+    width: 45%;
+    position: relative;
+    margin: 20px 0;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 4px 10px 5px 4px #1a1a1a9c;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container img {
+    width: 55%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background-image: linear-gradient(to top, #1E3F66 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
     animation: sweep 0.8s ease-out forwards;
-    animation-delay:0.4s;
-    padding:0 10px;
+    animation-delay: 0.4s;
+    padding: 0 10px;
     box-decoration-break: clone;
 }
 
-.highlight:hover{
-    background-size:100% 100%;
+@keyframes sweep {
+    from { background-size: 0% 100%; }
+    to { background-size: 100% 100%; }
 }
 
 footer {
-    background:#1E3F66;
-    font-family:'Stack Sans Notch';
-    font-size:12px;
-    align-items: center;
+    background: #1E3F66;
+    font-family: 'Stack Sans Notch';
+    font-size: 12px;
     text-align: center;
-    padding-top:10px;
-    padding-bottom:10px;
-    color:white;
+    padding: 20px 10px;
+    color: white;
     opacity: 0.7;
 }
 
 footer a {
-    color:white;
+    color: white;
 }
 
-li {
-    font-family: "Stack Sans Notch";
+
+@media (max-width: 800px) {
+    h1 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar h2 {
+        font-size: 18px;
+    }
+
+    .container-wrapper {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .container {
+        width: 90%; 
+    }
+
+    .container img {
+        width: 80%; 
+        margin: 0 auto 15px auto;
+    }
 }
